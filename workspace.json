@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
-    "client": "packages/client"
+    "client": "packages/client",
+    "migrations": "packages/migrations"
   }
 }

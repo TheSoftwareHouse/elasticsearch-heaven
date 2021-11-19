@@ -14,7 +14,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@elasticsearch-heaven/client": ["packages/client/src/index.ts"]
+      "@elasticsearch-heaven/client": ["packages/client/src/index.ts"],
+      "@elasticsearch-heaven/migrations": ["packages/migrations/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
