@@ -14,20 +14,20 @@ export const createConsoleLogger = (
   scope?: string
 ): Logger => ({
   info(...args) {
-    console.log(prefix(scope), prefix('INFO ℹ'), ...args);
+    console.log(prefix(scope), 'ℹ', ...args);
   },
   warn(...args) {
-    console.log(prefix(scope), prefix('WARN ⚠️'), chalk.yellow(...args));
+    console.log(prefix(scope), '⚠️', chalk.yellow(...args));
   },
   error(...args) {
-    console.log(prefix(scope), prefix('ERROR ⛔️'), chalk.red(...args));
+    console.log(prefix(scope), '⛔️', chalk.red(...args));
   },
   success(...args) {
-    console.log(prefix(scope), prefix('SUCCESS ✅'), chalk.green(...args));
+    console.log(prefix(scope), '✅', chalk.green(...args));
   },
   debug(...args) {
     if (debug) {
-      console.log(prefix(scope), prefix('DEBUG 🐞'), chalk.blue(...args));
+      console.log(prefix(scope), '🐞', chalk.blue(...args));
     }
   },
 
