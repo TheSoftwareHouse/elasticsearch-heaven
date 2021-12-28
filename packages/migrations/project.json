@@ -29,9 +29,6 @@
         "main": "packages/migrations/src/index.ts",
         "assets": ["packages/migrations/*.md"]
       }
-    },
-    "version": {
-      "executor": "@jscutlery/semver:version"
     }
   },
   "tags": []

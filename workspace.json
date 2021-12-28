@@ -9,6 +9,17 @@
     "index": "packages/index",
     "logger": "packages/logger",
     "migrations": "packages/migrations",
-    "types": "packages/types"
+    "types": "packages/types",
+    "workspace": {
+      "root": ".",
+      "targets": {
+        "version": {
+          "executor": "@jscutlery/semver:version",
+          "options": {
+            "syncVersions": true
+          }
+        }
+      }
+    }
   }
 }
