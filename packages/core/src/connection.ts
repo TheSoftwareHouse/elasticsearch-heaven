@@ -33,10 +33,10 @@ export class Connection {
   }
 
   async runMigrations() {
-    await this.migrationsRunner.up();
+    return this.migrationsRunner.up();
   }
 
   async rollbackMigrations(names: string[]) {
-    await this.migrationsRunner.down(names);
+    return this.migrationsRunner.down(names);
   }
 }

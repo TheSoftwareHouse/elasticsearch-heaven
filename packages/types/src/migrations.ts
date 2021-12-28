@@ -7,7 +7,7 @@ export interface MigrationEntry {
   timestamp: Date;
 }
 
-export interface MigrationBag<Context> {
+export interface MigrationBag<Context = unknown> {
   client: Client;
   context: Context;
 }
