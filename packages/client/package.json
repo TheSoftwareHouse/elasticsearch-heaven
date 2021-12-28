@@ -1,4 +1,7 @@
 {
   "name": "@elasticsearch-heaven/client",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@elastic/elasticsearch": "^7"
+  }
 }

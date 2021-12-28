@@ -15,7 +15,8 @@
       "outputs": ["coverage/packages/migrations"],
       "options": {
         "jestConfig": "packages/migrations/jest.config.js",
-        "passWithNoTests": true
+        "passWithNoTests": true,
+        "runInBand": true
       }
     },
     "build": {
@@ -28,6 +29,9 @@
         "main": "packages/migrations/src/index.ts",
         "assets": ["packages/migrations/*.md"]
       }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version"
     }
   },
   "tags": []

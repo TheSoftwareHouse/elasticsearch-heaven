@@ -1,0 +1,7 @@
+{
+  "name": "@elasticsearch-heaven/core",
+  "version": "0.0.1",
+  "bin": {
+    "es-heaven": "src/cli/program.js"
+  }
+}

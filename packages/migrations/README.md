@@ -1,6 +1,6 @@
 # migrations
 
-This library was generated with [Nx](https://nx.dev).
+Handle migration related logic.
 
 ## Running unit tests
 

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ES Migration Storage should create index if required 1`] = `
+Object {
+  "properties": Object {
+    "id": Object {
+      "type": "keyword",
+    },
+    "name": Object {
+      "type": "keyword",
+    },
+    "timestamp": Object {
+      "type": "date",
+    },
+  },
+}
+`;

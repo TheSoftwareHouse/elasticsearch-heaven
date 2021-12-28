@@ -2,20 +2,28 @@
   "compileOnSave": false,
   "compilerOptions": {
     "rootDir": ".",
+    "strict": true,
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es2020",
-    "module": "esnext",
+    "module": "CommonJS",
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
       "@elasticsearch-heaven/client": ["packages/client/src/index.ts"],
-      "@elasticsearch-heaven/migrations": ["packages/migrations/src/index.ts"]
+      "@elasticsearch-heaven/config": ["packages/config/src/index.ts"],
+      "@elasticsearch-heaven/core": ["packages/core/src/index.ts"],
+      "@elasticsearch-heaven/e2e": ["packages/e2e/src/index.ts"],
+      "@elasticsearch-heaven/errors": ["packages/errors/src/index.ts"],
+      "@elasticsearch-heaven/index": ["packages/index/src/index.ts"],
+      "@elasticsearch-heaven/logger": ["packages/logger/src/index.ts"],
+      "@elasticsearch-heaven/migrations": ["packages/migrations/src/index.ts"],
+      "@elasticsearch-heaven/types": ["packages/types/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

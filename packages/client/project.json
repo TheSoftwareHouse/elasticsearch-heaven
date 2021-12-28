@@ -3,6 +3,17 @@
   "sourceRoot": "packages/client/src",
   "projectType": "library",
   "targets": {
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/client",
+        "tsConfig": "packages/client/tsconfig.lib.json",
+        "packageJson": "packages/client/package.json",
+        "main": "packages/client/src/index.ts",
+        "assets": ["packages/client/*.md"]
+      }
+    },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
@@ -17,20 +28,6 @@
         "jestConfig": "packages/client/jest.config.js",
         "passWithNoTests": true
       }
-    },
-    "build": {
-      "executor": "@nrwl/node:package",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/client",
-        "tsConfig": "packages/client/tsconfig.lib.json",
-        "packageJson": "packages/client/package.json",
-        "main": "packages/client/src/index.ts",
-        "assets": ["packages/client/*.md"]
-      }
-    },
-    "version": {
-      "executor": "@jscutlery/semver:version"
     }
   },
   "tags": []

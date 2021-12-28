@@ -12,4 +12,5 @@ module.exports = {
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: '../../coverage/packages/migrations',
+  setupFilesAfterEnv: [`${process.cwd()}/tests/setup.ts`],
 };
