@@ -18,6 +18,27 @@ It is build as monorepo, in order to make it as modular as possible, so that you
 
 In order to use only bare minimum from this package, run `npm install @elasticsearch-heaven/core`.
 
+## Configuration
+
+Create `elasticsearch-heaven.config.ts` file in root of your project. Minimal configuration looks like this:
+
+```typescript
+import { Config } from '@elasticsearch-heaven/config';
+import * as path from 'path';
+
+export default {
+  clientOptions: {
+    node: 'http://localhost:9200',
+  },
+  migrations: {
+    migrationsDir: path.resolve(__dirname, './migrations'),
+    migrationFileExt: 'ts',
+    migrations: [],
+  },
+} as Config;
+
+```
+
 ## Usage
 
 ### Creating and running migrations
