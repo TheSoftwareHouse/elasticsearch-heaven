@@ -14,6 +14,27 @@ Currently, it supports following features:
 
 It is build as monorepo, in order to make it as modular as possible, so that you can only use the features that you will need. In future it will contain much more features, such as generating migrations basing on schema change, schema resolvers, ORM etc.
 
+## Installation
+
+In order to use only bare minimum from this package, run `npm install @elasticsearch-heaven/core`.
+
+## Usage
+
+### Creating and running migrations
+
+In order to create new migration, run:
+```shell
+es-heaven create:migration --name=TestMigration --config-name=elasticsearch-heaven.config.ts
+```
+
+and then in your application:
+```typescript
+import config from './elasticsearch-heaven.config'
+
+const connection = await Connection.create(config);
+
+await connection.runMigrations();
+```
 
 ## Development
 
