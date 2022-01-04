@@ -2,6 +2,10 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.2.2](https://github.com/TheSoftwareHouse/elasticsearch-heaven/compare/v0.2.1...v0.2.2) (2022-01-04)
+
+
+
 ## [0.2.1](https://github.com/TheSoftwareHouse/elasticsearch-heaven/compare/v0.2.0...v0.2.1) (2022-01-04)
 
 
