@@ -25,7 +25,8 @@
     "dep-graph": "nx dep-graph",
     "help": "nx help",
     "cz": "cz",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "typecheck": "tsc --noEmit -p tsconfig.base.json"
   },
   "dependencies": {
     "chalk": "^4.1.2",
