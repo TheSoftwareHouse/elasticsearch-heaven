@@ -10,7 +10,24 @@
         "version": {
           "executor": "@jscutlery/semver:version",
           "options": {
-            "syncVersions": true
+            "syncVersions": true,
+            "postTargets": [
+              "workspace:publish-all",
+              "workspace:github"
+            ]
+          }
+        },
+        "github": {
+          "executor": "@jscutlery/semver:github",
+          "options": {
+            "tag": "${tag}",
+            "generateNotes": true
+          }
+        },
+        "publish-all": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "npx nx run-many --target=publish --all --parallel=1"
           }
         }
       }

@@ -28,6 +28,13 @@
         "jestConfig": "packages/elasticsearch-heaven-types/jest.config.js",
         "passWithNoTests": true
       }
+    },
+    "publish": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "access": "public",
+        "dryRun": true
+      }
     }
   },
   "tags": []
