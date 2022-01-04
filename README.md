@@ -16,7 +16,7 @@ It is build as monorepo, in order to make it as modular as possible, so that you
 
 ## Installation
 
-In order to use only bare minimum from this package, run `npm install @tshio/elasticsearch-heaven-core`.
+In order to use only bare minimum from this package, run `npm install @tshio/elasticsearch-heaven-core @elastic/elasticsearch`.
 
 ## Configuration
 
