@@ -16,14 +16,14 @@ It is build as monorepo, in order to make it as modular as possible, so that you
 
 ## Installation
 
-In order to use only bare minimum from this package, run `npm install @tshio/core`.
+In order to use only bare minimum from this package, run `npm install @tshio/elasticsearch-heaven-core`.
 
 ## Configuration
 
-Create `tshio.config.ts` file in root of your project. Minimal configuration looks like this:
+Create `elasticsearch-heaven.config.ts` file in root of your project. Minimal configuration looks like this:
 
 ```typescript
-import { Config } from '@tshio/config';
+import { Config } from '@tshio/elasticsearch-heaven-core';
 import * as path from 'path';
 
 export default {
@@ -45,12 +45,14 @@ export default {
 
 In order to create new migration, run:
 ```shell
-es-heaven create:migration --name=TestMigration --config-name=tshio.config.ts
+es-heaven create:migration --name=TestMigration --config-name=elasticsearch-heaven.config.ts
 ```
 
 and then in your application:
+
 ```typescript
-import config from './tshio.config'
+import config from './elasticsearch-heaven.config'
+import { Connection } from "@tshio/elasticsearch-heaven-core";
 
 const connection = await Connection.create(config);
 
