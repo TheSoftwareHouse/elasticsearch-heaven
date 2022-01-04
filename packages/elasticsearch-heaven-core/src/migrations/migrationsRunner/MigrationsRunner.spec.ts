@@ -112,6 +112,8 @@ describe('MigrationsRunner', () => {
 
     expect(rollbackedMigrations).toEqual(1);
 
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
     const readMigrations = await migrationsStorage.read();
 
     expect(readMigrations).toHaveLength(0);
