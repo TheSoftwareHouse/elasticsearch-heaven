@@ -2,6 +2,15 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+# [0.2.0](https://github.com/TheSoftwareHouse/elasticsearch-heaven/compare/v0.1.0...v0.2.0) (2022-01-04)
+
+
+### Features
+
+* migrate workspace to [@tshio](https://github.com/tshio) ([6dfafa5](https://github.com/TheSoftwareHouse/elasticsearch-heaven/commit/6dfafa59257a0899b1845782cff13da153a898e0))
+
+
+
 # 0.1.0 (2022-01-03)
 
 
