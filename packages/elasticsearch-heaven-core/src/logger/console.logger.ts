@@ -17,10 +17,10 @@ export const createConsoleLogger = (
     console.log(prefix(scope), 'ℹ', ...args);
   },
   warn(...args) {
-    console.log(prefix(scope), '⚠️', chalk.yellow(...args));
+    console.log(chalk.bold(prefix(scope), '⚠️', chalk.yellow(...args)));
   },
   error(...args) {
-    console.log(prefix(scope), '⛔️', chalk.red(...args));
+    console.log(chalk.bold(prefix(scope), '⛔️', chalk.red(...args)));
   },
   success(...args) {
     console.log(prefix(scope), '✅', chalk.green(...args));
