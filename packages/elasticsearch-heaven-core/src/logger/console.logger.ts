@@ -3,7 +3,7 @@ import { Logger } from '@tshio/elasticsearch-heaven-types';
 
 const prefix = (prefix?: string) => {
   if (!prefix) {
-    return undefined;
+    return '';
   }
 
   return `[${prefix}]`;
