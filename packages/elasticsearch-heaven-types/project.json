@@ -32,8 +32,7 @@
     "publish": {
       "executor": "ngx-deploy-npm:deploy",
       "options": {
-        "access": "public",
-        "dryRun": true
+        "access": "public"
       }
     }
   },
