@@ -1,22 +1,33 @@
 {
   "version": 2,
   "projects": {
-    "client": "packages/client",
-    "config": "packages/config",
-    "core": "packages/core",
     "e2e": "packages/e2e",
-    "errors": "packages/errors",
-    "index": "packages/index",
-    "logger": "packages/logger",
-    "migrations": "packages/migrations",
-    "types": "packages/types",
+    "elasticsearch-heaven-core": "packages/elasticsearch-heaven-core",
+    "elasticsearch-heaven-types": "packages/elasticsearch-heaven-types",
     "workspace": {
       "root": ".",
       "targets": {
         "version": {
           "executor": "@jscutlery/semver:version",
           "options": {
-            "syncVersions": true
+            "syncVersions": true,
+            "postTargets": [
+              "workspace:publish-all",
+              "workspace:github"
+            ]
+          }
+        },
+        "github": {
+          "executor": "@jscutlery/semver:github",
+          "options": {
+            "tag": "${tag}",
+            "generateNotes": true
+          }
+        },
+        "publish-all": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "npx nx run-many --target=publish --all --parallel=1"
           }
         }
       }

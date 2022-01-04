@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'e2e',
+  displayName: 'elasticsearch-heaven-core',
   preset: '../../jest.preset.js',
   globals: {
     'ts-jest': {
@@ -11,7 +11,7 @@ module.exports = {
     '^.+\\.[tj]sx?$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/packages/e2e',
-  setupFilesAfterEnv: [`${process.cwd()}/tests/setup.ts`],
+  coverageDirectory: '../../coverage/packages/elasticsearch-heaven-core',
+  setupFilesAfterEnv: ['../../tests/setup.ts'],
   testTimeout: 500000,
 };

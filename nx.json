@@ -1,5 +1,5 @@
 {
-  "npmScope": "elasticsearch-heaven",
+  "npmScope": "tshio",
   "affected": {
     "defaultBase": "master"
   },
@@ -35,6 +35,12 @@
     "build": [
       {
         "target": "build",
+        "projects": "dependencies"
+      }
+    ],
+    "publish": [
+      {
+        "target": "publish",
         "projects": "dependencies"
       }
     ]

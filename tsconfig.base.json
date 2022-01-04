@@ -15,15 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@elasticsearch-heaven/client": ["packages/client/src/index.ts"],
-      "@elasticsearch-heaven/config": ["packages/config/src/index.ts"],
-      "@elasticsearch-heaven/core": ["packages/core/src/index.ts"],
-      "@elasticsearch-heaven/e2e": ["packages/e2e/src/index.ts"],
-      "@elasticsearch-heaven/errors": ["packages/errors/src/index.ts"],
-      "@elasticsearch-heaven/index": ["packages/index/src/index.ts"],
-      "@elasticsearch-heaven/logger": ["packages/logger/src/index.ts"],
-      "@elasticsearch-heaven/migrations": ["packages/migrations/src/index.ts"],
-      "@elasticsearch-heaven/types": ["packages/types/src/index.ts"]
+      "@tshio/e2e": ["packages/e2e/src/index.ts"],
+      "@tshio/elasticsearch-heaven-core": [
+        "packages/elasticsearch-heaven-core/src/index.ts"
+      ],
+      "@tshio/elasticsearch-heaven-types": [
+        "packages/elasticsearch-heaven-types/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

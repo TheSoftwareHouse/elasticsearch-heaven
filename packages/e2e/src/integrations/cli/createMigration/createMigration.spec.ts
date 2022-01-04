@@ -23,7 +23,7 @@ describe('Create migration command', () => {
   });
 
   it('should create new migration file', async () => {
-    await $`npx nx run core:cli-create-migration --name="TestMigration" --config-path=${configDir}`;
+    await $`npx nx run elasticsearch-heaven-core:cli-create-migration --name="TestMigration" --config-path=${configDir}`;
 
     const files = fs.readdirSync(migrationsDir);
 

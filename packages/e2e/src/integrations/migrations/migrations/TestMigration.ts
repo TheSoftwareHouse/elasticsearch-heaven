@@ -1,4 +1,4 @@
-import { MigrationBag } from '@elasticsearch-heaven/types';
+import { MigrationBag } from '@tshio/elasticsearch-heaven-types';
 
 export const up = async ({ client }: MigrationBag) => {
   await client.indices.create({
