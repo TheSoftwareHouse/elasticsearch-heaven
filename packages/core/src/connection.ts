@@ -1,9 +1,6 @@
-import {
-  Config,
-  resolveConfig,
-  ResolvedConfig,
-} from '@elasticsearch-heaven/config';
-import { MigrationsRunner } from '@elasticsearch-heaven/migrations';
+import { MigrationsRunner } from './migrations';
+import { resolveConfig, ResolvedConfig } from './config';
+import { Config } from '@elasticsearch-heaven/types';
 
 export class Connection {
   private readonly config: ResolvedConfig;

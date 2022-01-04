@@ -13,4 +13,5 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: '../../coverage/packages/core',
   setupFilesAfterEnv: ['../../tests/setup.ts'],
+  testTimeout: 500000,
 };

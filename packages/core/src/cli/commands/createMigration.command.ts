@@ -1,6 +1,6 @@
-import { readConfig } from '@elasticsearch-heaven/config';
-import { createMigration } from '@elasticsearch-heaven/migrations';
 import { createBaseCommand } from './baseCommand';
+import { createMigration } from '../../migrations';
+import { readConfig } from '../../config';
 
 export const createMigrationCommand = createBaseCommand('create:migration')
   .description('Creates new migration file')

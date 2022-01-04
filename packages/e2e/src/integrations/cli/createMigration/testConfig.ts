@@ -1,5 +1,5 @@
-import { Config } from '@elasticsearch-heaven/config';
 import * as path from 'path';
+import { Config } from '@elasticsearch-heaven/types';
 
 export default {
   clientOptions: {

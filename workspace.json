@@ -1,14 +1,8 @@
 {
   "version": 2,
   "projects": {
-    "client": "packages/client",
-    "config": "packages/config",
     "core": "packages/core",
     "e2e": "packages/e2e",
-    "errors": "packages/errors",
-    "index": "packages/index",
-    "logger": "packages/logger",
-    "migrations": "packages/migrations",
     "types": "packages/types",
     "workspace": {
       "root": ".",

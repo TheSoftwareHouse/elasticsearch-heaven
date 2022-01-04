@@ -1,4 +1,4 @@
-import { Client } from '@elasticsearch-heaven/client';
+import { Client } from '@elastic/elasticsearch';
 
 declare global {
   namespace NodeJS {

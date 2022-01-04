@@ -1,5 +1,5 @@
-import { Client } from '@elasticsearch-heaven/client';
 import './typings';
+import { Client } from '@elastic/elasticsearch';
 
 beforeAll(async () => {
   global.esClient = new Client({
