@@ -7,4 +7,4 @@ This file was generated using [@jscutlery/semver](https://github.com/jscutlery/s
 
 ### Features
 
-* create and run migration files ([5e18191](https://github.com/TheSoftwareHouse/elasticsearch-heaven/commit/5e1819139dfbdfef832871ec88ba8f53d0d1c3e9))
+* create and run migration files ([5e18191](https://github.com/TheSoftwareHouse/tshio/commit/5e1819139dfbdfef832871ec88ba8f53d0d1c3e9))

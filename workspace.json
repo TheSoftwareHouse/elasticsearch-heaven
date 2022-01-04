@@ -1,9 +1,9 @@
 {
   "version": 2,
   "projects": {
-    "core": "packages/core",
     "e2e": "packages/e2e",
-    "types": "packages/types",
+    "elasticsearch-heaven-core": "packages/elasticsearch-heaven-core",
+    "elasticsearch-heaven-types": "packages/elasticsearch-heaven-types",
     "workspace": {
       "root": ".",
       "targets": {

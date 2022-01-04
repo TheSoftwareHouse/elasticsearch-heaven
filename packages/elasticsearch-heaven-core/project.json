@@ -1,0 +1,41 @@
+{
+  "root": "packages/elasticsearch-heaven-core",
+  "sourceRoot": "packages/elasticsearch-heaven-core/src",
+  "projectType": "library",
+  "targets": {
+    "cli-create-migration": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "ts-node -r tsconfig-paths/register packages/elasticsearch-heaven-core/src/cli/program.ts create:migration"
+      }
+    },
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/elasticsearch-heaven-core",
+        "tsConfig": "packages/elasticsearch-heaven-core/tsconfig.lib.json",
+        "packageJson": "packages/elasticsearch-heaven-core/package.json",
+        "main": "packages/elasticsearch-heaven-core/src/index.ts",
+        "assets": ["packages/elasticsearch-heaven-core/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/elasticsearch-heaven-core/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/elasticsearch-heaven-core"],
+      "options": {
+        "jestConfig": "packages/elasticsearch-heaven-core/jest.config.js",
+        "passWithNoTests": true,
+        "runInBand": true
+      }
+    }
+  },
+  "tags": []
+}

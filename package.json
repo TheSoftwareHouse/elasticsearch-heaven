@@ -1,12 +1,12 @@
 {
-  "name": "elasticsearch-heaven",
+  "name": "tshio",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "nx": "nx",
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx run-many --target=test --all --max-parallel=1",
+    "test": "nx run-many --target=test --all --parallel=1",
     "lint": "nx workspace-lint && nx run-many --target=lint --all",
     "e2e": "nx e2e",
     "affected:apps": "nx affected:apps",

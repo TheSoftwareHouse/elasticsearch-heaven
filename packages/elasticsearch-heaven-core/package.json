@@ -1,0 +1,7 @@
+{
+  "name": "@tshio/elasticsearch-heaven-core",
+  "version": "0.1.0",
+  "bin": {
+    "es-heaven": "src/cli/program.js"
+  }
+}

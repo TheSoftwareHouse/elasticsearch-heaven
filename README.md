@@ -16,14 +16,14 @@ It is build as monorepo, in order to make it as modular as possible, so that you
 
 ## Installation
 
-In order to use only bare minimum from this package, run `npm install @elasticsearch-heaven/core`.
+In order to use only bare minimum from this package, run `npm install @tshio/core`.
 
 ## Configuration
 
-Create `elasticsearch-heaven.config.ts` file in root of your project. Minimal configuration looks like this:
+Create `tshio.config.ts` file in root of your project. Minimal configuration looks like this:
 
 ```typescript
-import { Config } from '@elasticsearch-heaven/config';
+import { Config } from '@tshio/config';
 import * as path from 'path';
 
 export default {
@@ -45,12 +45,12 @@ export default {
 
 In order to create new migration, run:
 ```shell
-es-heaven create:migration --name=TestMigration --config-name=elasticsearch-heaven.config.ts
+es-heaven create:migration --name=TestMigration --config-name=tshio.config.ts
 ```
 
 and then in your application:
 ```typescript
-import config from './elasticsearch-heaven.config'
+import config from './tshio.config'
 
 const connection = await Connection.create(config);
 
@@ -72,7 +72,7 @@ Run `nx g @nrwl/workspace:lib my-lib` to generate a library.
 
 > You can also use any of the plugins above to generate libraries as well.
 
-Libraries are shareable across libraries and applications. They can be imported from `@elasticsearch-heaven/mylib`.
+Libraries are shareable across libraries and applications. They can be imported from `@tshio/mylib`.
 
 ### Build
 

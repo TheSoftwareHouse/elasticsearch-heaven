@@ -1,4 +1,4 @@
-import { Connection } from '@elasticsearch-heaven/core';
+import { Connection } from '@tshio/elasticsearch-heaven-core';
 import * as path from 'path';
 
 describe('Migrations', () => {

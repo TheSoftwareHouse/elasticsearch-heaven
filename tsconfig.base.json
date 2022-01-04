@@ -15,9 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@elasticsearch-heaven/core": ["packages/core/src/index.ts"],
-      "@elasticsearch-heaven/e2e": ["packages/e2e/src/index.ts"],
-      "@elasticsearch-heaven/types": ["packages/types/src/index.ts"]
+      "@tshio/e2e": ["packages/e2e/src/index.ts"],
+      "@tshio/elasticsearch-heaven-core": [
+        "packages/elasticsearch-heaven-core/src/index.ts"
+      ],
+      "@tshio/elasticsearch-heaven-types": [
+        "packages/elasticsearch-heaven-types/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

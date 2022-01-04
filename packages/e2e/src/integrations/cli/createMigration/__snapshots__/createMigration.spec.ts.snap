@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Create migration command should create new migration file 1`] = `
-"import {MigrationBag} from '@elasticsearch-heaven/migrations'
+"import {MigrationBag} from '@tshio/migrations'
 
 export async function up(bag: MigrationBag) {}
 

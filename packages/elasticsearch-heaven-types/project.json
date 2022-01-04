@@ -1,0 +1,34 @@
+{
+  "root": "packages/elasticsearch-heaven-types",
+  "sourceRoot": "packages/elasticsearch-heaven-types/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/elasticsearch-heaven-types",
+        "tsConfig": "packages/elasticsearch-heaven-types/tsconfig.lib.json",
+        "packageJson": "packages/elasticsearch-heaven-types/package.json",
+        "main": "packages/elasticsearch-heaven-types/src/index.ts",
+        "assets": ["packages/elasticsearch-heaven-types/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/elasticsearch-heaven-types/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/elasticsearch-heaven-types"],
+      "options": {
+        "jestConfig": "packages/elasticsearch-heaven-types/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
